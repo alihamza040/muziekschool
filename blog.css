@@ -1,0 +1,143 @@
+body {
+    background-color: #F2F1EF;
+}
+
+header {
+    text-align: center;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    float: left;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    border: black px solid;
+}
+
+/* Menu */
+
+li {
+    float: left;
+    list-style-type: none;
+    background-color: black;
+}
+
+    li a {
+        display: block;
+        color: white;
+        background-color: black;
+        text-align: center;
+        text-decoration: none;
+        padding: 15px 35px;
+        margin: 10px;
+        margin-top: 10px;
+        font-size: 15px;
+        overflow: hidden;
+        --g: 6px; /* the gap */
+        --b: 1px; /* border thickness*/
+        --c: white; /* the color */
+
+
+        padding: calc(var(--g) + var(--b));
+        --_c: #0000 0 25%, var(--c) 0 50%;
+        --_g1: repeating-linear-gradient(90deg,var(--_c)) repeat-x;
+        --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+        background: var(--_g1) var(--_p, 25%) 0,var(--_g2) 0 var(--_p,125%), var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+        background-size: 200% var(--b),var(--b) 200%;
+        cursor: pointer;
+        filter: grayscale(50%);
+        transition: .1s;
+    }
+
+
+
+
+
+        li a:hover {
+            background-color: #413F3D;
+            color: white;
+            font-size: 16px;
+            overflow: hidden;
+            text-shadow: 1px 1px black;
+            --_p: 75%;
+            filter: grayscale(0%);
+        }
+
+
+ul {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+
+#header_p {
+    color: white;
+    float: right;
+    margin-right: 10px;
+    border-left: black 1px solid;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Menu End */
+
+/* Main Start */
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-between;
+    padding-top: 10px;
+    background-color: #F2F1EF;
+    text-align: justify;
+}
+
+.box-2 {
+    box-shadow: 0px 5px 9px 5px rgba(0,0,0,0.3);
+    padding-left: 10px;
+    padding-right:10px;
+    font-size: 25px;
+    background-color: white;
+    width: 60%;
+    border: 1px black solid;
+    margin-bottom:10px;
+}
+
+.divResult {
+    height:200px;
+    width:200px;
+}
+
+footer {
+    color: black;
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+@media(max-width: 960px) {
+
+    #afb_article {
+        width: 35%;
+    }
+
+    .container {
+        width: 100%;
+        flex: column;
+    }
+
+    .box-1, .box-2, form {
+        width: 100%;
+    }
+
+    li {
+        float: left;
+        width: 100%;
+    }

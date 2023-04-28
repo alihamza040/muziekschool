@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="blog_toevoegen.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="blog_toevoegen.js"></script>
+    <script src="nodecode\index.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <h1> Muziekschool J&H </h1>
+
+
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li> <a class="active" href="index.html"> HOME </a> </li>
+                    <li><a href="overons.html"> OVER ONS </a> </li>
+                    <li><a href="tarieven.html"> TARIEVEN </a> </li>
+                    <li><a href="contact.html"> CONTACT</a> </li>
+                    <li><a href="blog.html"> BLOG </a> </li>
+                    <li><a href="blog_toevoegen.html"> BLOG TOEVOEGEN </a> </li>
+
+                    <p id="header_p"> Luisterend oor voor talent</p>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <form>
+        <label for="header">KOPTEKST:</label>
+        <div id="uitvoer"> Uw koptekst is te lang</div>
+        <input type="text" label="header" id="koptekst" placeholder="voer uw koptekst in" />
+        <textarea id="blog_tekst" name="blog_tekst" rows="24" cols="80" placeholder="Voer hier de teks in van uw blog"></textarea>
+        <br>
+    </form>
+    <button id="submit"> Sla op</button>
+
+
+    <footer>
+
+        <div id="footer_">© 2023 Muziekschool H&J</div>
+
+    </footer>
+
+</body>
+</html>
