@@ -133,3 +133,24 @@ footer {
     margin-left: 5px;
     margin-top: 5px;
 }
+
+@media(max-width: 960px) {
+
+    #afb_article {
+        width: 35%;
+    }
+
+    .container {
+        width: 100%;
+        flex: column;
+    }
+
+    .box-1, .box-2, form {
+        width: 100%;
+    }
+
+    li {
+        float: left;
+        width: 100%;
+    }
+
