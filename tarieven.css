@@ -148,6 +148,10 @@ footer {
     .box-1, .box-2 {
         width: 100%;
     }
+    
+         li a {
+        border: 1px white solid;
+    }
 
     li {
         float: left;
