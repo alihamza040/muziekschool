@@ -153,8 +153,13 @@ a {
         width: 100%;
     }
 
+         li a {
+        border: 1px white solid;
+    }
+    
     li {
         float: left;
         width: 100%;
     }
+
 
